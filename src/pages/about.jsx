@@ -7,7 +7,8 @@ import Scroll from '../utils/scroll'
 
 function About() {
   return (
-    <div className="h-[100vh] flex justify-center items-center  dark:bg-black mt-10" id="about">
+    <div className="h-[120vh] flex justify-center items-center  dark:bg-black mt-12" id="about">
+      
       <div className="flex flex-col justify-center bg-white dark:bg-gray-900 p-[2.5rem] md:p-[2rem] rounded-lg shadow-lg w-[70vw] md:w-[85vw] min-h-[50vh]">
         <div className="block bg-white dark:bg-gray-900 rounded-full mx-auto -mt-12 md:-mt-20 lg:-mt-24 h-32 w-32 lg:h-40 lg:w-40 bg-cover bg-center border-4 border-blue-300">
           <img src="https://avatars.githubusercontent.com/u/111561408?s=400&u=74899145e2f04a88f149d2a77daf17e3f2c9501b&v=4" alt="github_image_void_umesha" className=" rounded-full w-[10rem]" />
