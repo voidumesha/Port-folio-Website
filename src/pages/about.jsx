@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from 'react-typed';
+import ReactTyped from 'react-typed';
 import { GoLocation } from 'react-icons/go'
 import { HiCodeBracket } from 'react-icons/hi2';
 import { FaGithub, FaTwitter, FaTelegram, FaLinkedin, FaEnvelope, FaCloudDownloadAlt } from 'react-icons/fa'
@@ -15,7 +15,7 @@ function About() {
         <h1 className="p-3 text-2xl lg:text-3xl text-center text-gray-600 dark:text-gray-200 uppercase">Umesha Rukshan</h1>
         <div className="flex flex-col gap-4">
           <p className="flex dark:text-gray-400 items-center gap-2 mt-200 "> <HiCodeBracket   />
-            <Typed
+            <ReactTyped
               strings={['Software Developer', 'Open Source Contributor', 'JavaScript Developer', 'Node.js Developer', 'React Developer','Java Developer', 'Full Stack Developer', 'Web Developer','UI/UX Designer']}
               typeSpeed={50}
               backSpeed={60}
