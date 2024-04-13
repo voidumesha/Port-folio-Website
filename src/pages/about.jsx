@@ -1,7 +1,7 @@
 import React from "react";
-import Typed  from 'react-typed';
+import Typed from 'react-typed';
 import { GoLocation } from 'react-icons/go'
-import { HiCodeBracket } from "react-icons/hi2";
+import { HiCodeBracket } from 'react-icons/hi2';
 import { FaGithub, FaTwitter, FaTelegram, FaLinkedin, FaEnvelope, FaCloudDownloadAlt } from 'react-icons/fa'
 import Scroll from '../utils/scroll'
 
