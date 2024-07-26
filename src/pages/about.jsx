@@ -5,7 +5,10 @@ import { HiCodeBracket } from 'react-icons/hi2';
 import { FaGithub, FaTwitter, FaTelegram, FaLinkedin, FaEnvelope, FaCloudDownloadAlt } from 'react-icons/fa'
 import Scroll from '../utils/scroll'
 
+
 function About() {
+
+  
   return (
     <div className="h-[115vh] flex justify-center items-center  dark:bg-black mt-12" id="about">
       
@@ -30,7 +33,19 @@ function About() {
           </p>
           <div className="flex gap-3 md:justify-around">
             <button className="rounded-full dark:bg-blue-800 bg-blue-600 px-3 py-2 w-fit text-sm text-white dark:text-gray-300 md:place-self-center hover:bg-blue-900" onClick={() => { Scroll('contact') }}> Get in touch </button>
-            <button className="flex gap-2 items-center rounded-full bg-blue-600 dark:bg-blue-800 px-3 py-2 w-fit text-sm text-white dark:text-gray-300 md:place-self-center hover:bg-blue-900"> Download CV <FaCloudDownloadAlt /> </button>
+            <button className="flex gap-2 items-center rounded-full bg-blue-600 dark:bg-blue-800 px-3 py-2 w-fit text-sm text-white dark:text-gray-300 md:place-self-center hover:bg-blue-900"
+            onClick={() =>{
+              console.log("pkaka")
+              const link = document.createElement('a');
+              link.href = 'https://drive.usercontent.google.com/u/1/uc?id=1tsppXc-dHWCmy-BPh28FLMbASbG5UIVP&export=download';
+              link.target = '_blank';
+              link.click();
+            }
+          }
+            
+            >Download CV <FaCloudDownloadAlt /> </button>
+    
+
           </div>
         </div>
         <ul className="flex gap-3 justify-center mt-10 text-blue-500 text-xl">
