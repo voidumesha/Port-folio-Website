@@ -16,7 +16,7 @@ function About() {
         <div className="block bg-white dark:bg-gray-900 rounded-full mx-auto -mt-12 md:-mt-20 lg:-mt-24 h-32 w-32 lg:h-40 lg:w-40 bg-cover bg-center border-4 border-blue-300">
           <img src="https://avatars.githubusercontent.com/u/111561408?s=400&u=74899145e2f04a88f149d2a77daf17e3f2c9501b&v=4" alt="github_image_void_umesha" className=" rounded-full w-[10rem]" />
         </div>
-        <h1 className="p-3 text-2xl lg:text-3xl text-center text-gray-600 dark:text-gray-200 uppercase">Umesha Rukshan</h1>
+        <h1 className="p-3 text-2xl lg:text-3xl text-center text-gray-600 dark:text-gray-200 uppercase">Umesha Rukshan Pakaya</h1>
         <div className="flex flex-col gap-4">
           <p className="flex dark:text-gray-400 items-center gap-2 mt-200 "> <HiCodeBracket   />
             {/* <ReactTyped
