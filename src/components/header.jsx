@@ -42,7 +42,7 @@ function Header() {
     return (
         <>
             <div className='fixed w-full top-0 z-20'>
-                <div className='flex w-full flex-row items-center p-6 h-10 justify-between bg-white shadow-sm dark:bg-gray-900 dark:text-[#A5A5A5]'>
+                <div className='flex w-full flex-row items-center p-6 h-200 justify-between bg-white shadow-sm dark:bg-gray-900 dark:text-[#A5A5A5]'>
                     <div className='flex md:hidden'>
                         <h1 className='text-black dark:text-white mr-16 cursor-pointer' onClick={() => { scrollToElement('about') }}> Umesha Rukshan</h1>
                         <div className='block md:hidden'>
