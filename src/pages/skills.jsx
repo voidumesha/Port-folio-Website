@@ -8,6 +8,7 @@ import Firebase from '../svgs/firebase'
 import Git from '../svgs/git'
 import Python from '../svgs/python'
 import JavsScript from '../svgs/javascript'
+import Arduino from '../svgs/arduino'
 
 
 
@@ -58,6 +59,12 @@ function skills() {
       icon: Firebase,
       color: 'yellow'
     }, 
+    {
+      name: 'Arduino',
+      icon: Arduino,
+      color: 'yellow'
+    }, 
+
   ]
 
 
