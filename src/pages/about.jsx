@@ -24,7 +24,7 @@ function About() {
               typeSpeed={50}
               backSpeed={60}
               loop
-            />
+            />  */}
             </p>
           <p className="flex dark:text-gray-400 items-center gap-2"> <GoLocation /> Embilipitiya, Sri Lanka </p>
           <p className="leading-relaxed text-gray-600 dark:text-gray-300 text-justify text-sm">
