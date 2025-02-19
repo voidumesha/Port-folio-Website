@@ -118,6 +118,16 @@ function Projects() {
         >
           Node.js
         </button>
+        <button
+          className={`border dark:border-gray-800 text-sm py-1 px-4 ${filter === 'C++'
+            ? 'bg-gray-600 text-white dark:bg-white dark:text-black'
+            : 'bg-white text-black dark:bg-black dark:text-white'
+            }`}
+          value='C++'
+          onClick={handleFilterClick}
+        >
+          C++
+        </button>
        
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-[70vw] md:w-[90vw] min-h-[60vh">
