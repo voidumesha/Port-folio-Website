@@ -26,7 +26,7 @@ function About() {
               loop
             />  */}
             </p>
-          <p className="flex dark:text-gray-400 items-center gap-2"> <GoLocation /> Embilipitiya, Sri Lanka </p>
+          <p className="flex dark:text-gray-400 items-center gap-2"> <GoLocation /> Embilipitiya, Sri Lankaaaaa </p>
           <p className="leading-relaxed text-gray-600 dark:text-gray-300 text-justify text-sm">
           Experienced Software Developer with a keen eye for detail and a focus on dynamic solutions. Proficient in multiple programming languages such as Java, 
           Python, JavaScript, and Node.js. Equipped with a strong background in logic and software development, I bring extensive expertise in programming and computer applications. I am currently an undergraduate 
