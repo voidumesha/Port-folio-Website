@@ -36,22 +36,22 @@ function Projects() {
       link: 'https://github.com/voidumesha/Driver-Drowsiness-Detection---GPS-Tracking-App'
     },
     {
-      name: 'Portfolio',
-      description: 'This is my portfolio website. Made with React and Tailwind CSS.',
-      tags: ['React.js'],
-      link: 'https://github.com/voidumesha/Port-folio-Website'
+      name: 'Generator_automation_system',
+      description: 'This is a Final year research which I done as Job, this system has a lot of functions , All functions do GSM based sending message system. When desel Tank near fire detection / Tank auto level detect (100%,50%,25%,0%) / Gen on/off status /8am-5pm fuel level / when Tank lid opened / Also has display with push button, current date and time display ,when push button display fuel level and Gen status like that.',
+      tags: ['C++','Arduino',],
+      link: 'https://github.com/voidumesha/Generators_automation_system'
     },
     {
-      name: 'Portfolio',
-      description: 'This is my portfolio website. Made with React and Tailwind CSS.',
-      tags: ['React.js'],
-      link: 'https://github.com/voidumesha/Port-folio-Website'
+      name: 'Digital Oil Lamp system',
+      description: 'This system working on esp connected local website, and mega board connected all the oil lamp leds ,when clicking the localhost webpage buttons, will turn on oil lamp leds.',
+      tags: ['C++','Arduino','ESP32-WROOM-32','HTML','CSS','JS'],
+      link: 'https://github.com/voidumesha/Oil-Lamp-system'
     },
     {
-      name: 'Portfolio',
-      description: 'This is my portfolio website. Made with React and Tailwind CSS.',
-      tags: ['React.js'],
-      link: 'https://github.com/voidumesha/Port-folio-Website'
+      name: 'OpenCv_Painter',
+      description: 'This application will detect you hand and when you draw something it will paint and can erase the lines on screen.',
+      tags: ['Python','OpenCv','MediaPipe','Hand Tracking'],
+      link: 'https://github.com/voidumesha/Opencv_Hand_Painter'
     }
 
   ]
