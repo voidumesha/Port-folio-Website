@@ -38,7 +38,7 @@ function About() {
             onClick={() =>{
               console.log("pkaka")
               const link = document.createElement('a');
-              link.href = 'https://drive.usercontent.google.com/u/1/uc?id=1tsppXc-dHWCmy-BPh28FLMbASbG5UIVP&export=download';
+              link.href = 'https://drive.usercontent.google.com/u/1/uc?id=1oEJAQOMetXJz33fvfgZ-B7sVetxNx0hm&export=download';
               link.target = '_blank';
               link.click();
             }
