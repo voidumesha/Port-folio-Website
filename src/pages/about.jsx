@@ -20,7 +20,7 @@ function About() {
         <div className="flex flex-col gap-4">
           <p className="flex dark:text-gray-400 items-center gap-2 mt-200 "> <HiCodeBracket   />
           <Typewriter
-              words={['Software Developer', 'Open Source Contributor', 'JavaScript Developer', 'Node.js Developer', 'React Developer','Java Developer', 'Full Stack Developer', 'Web Developer','UI/UX Designer']}
+              words={['Software Developer', 'Open Source Contributor', 'JavaScript Developer','React Developer','Java Developer', 'Backend Developer', 'IOT System Expert','UI/UX Designer']}
               typeSpeed={50}
               deleteSpeed={60}
               loop={true}
