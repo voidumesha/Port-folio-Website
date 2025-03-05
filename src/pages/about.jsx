@@ -38,7 +38,7 @@ function About() {
             onClick={() =>{
               console.log("hellow!")
               const link = document.createElement('a');
-              link.href = 'https://drive.usercontent.google.com/u/1/uc?id=1oEJAQOMetXJz33fvfgZ-B7sVetxNx0hm&export=download';
+              link.href = 'https://drive.google.com/file/d/1XR-T4XHGIqfMMRhaQxFKdzzUO1OwETdH/view?usp=sharing';
               link.target = '_blank';
               link.click();
             }
