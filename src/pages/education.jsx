@@ -16,7 +16,7 @@ function education() {
             {
               children: (
                 <>
-                  <p className='dark:text-gray-300'> <b>Collage </b> </p>
+                  <p className='dark:text-gray-300'> <b>College </b> </p>
                   <p className='dark:text-gray-400'> Technology Stream </p>
                   <a href='https://www.facebook.com/profile.php?id=100062943263160' target='_blank' rel="noreferrer" className='dark:text-gray-400'> Palannoruwa Central College </a> <br />
                   <p className='flex items-center gap-2 dark:text-gray-400'> <BsCalendarDate /> 2016 - 2019 </p>
