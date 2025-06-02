@@ -1,4 +1,4 @@
-import React, { useRef, useState  } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {
   FaEnvelope,
   FaGithub,
@@ -12,6 +12,13 @@ function Contact() {
   const form = useRef();
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
+
+    useEffect(() => {
+    if (showSuccess) {
+      const timer = setTimeout(() => setShowSuccess(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccess]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -44,13 +51,6 @@ function Contact() {
       <h1 className="text-2xl lg:text-3xl text-center font-bold text-gray-500 dark:text-gray-400 mb-8 uppercase tracking-widest ">
         Contact
       </h1>
-      {/* Show success or error message */}
-      {showSuccess && (
-        <div className="mb-4 text-green-600 font-bold">Message sent successfully!</div>
-      )}
-      {showError && (
-        <div className="mb-4 text-red-600 font-bold">Failed to send message. Please try again.</div>
-      )}
 
       <div className=" shadow-md flex flex-row md:flex-col md:gap-8 bg-white dark:bg-gray-900 py-24 md:py-5 w-[70vw] md:w-[90vw] rounded-md">
         <div className="flex flex-col w-[49vw] md:w-full items-center justify-center gap-10">
@@ -134,7 +134,7 @@ function Contact() {
                 <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Website development
                 </span>
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Ai tools creating
                 </span>
                 <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
@@ -145,12 +145,50 @@ function Contact() {
             </p>
           </div>
         </div>
-         <div className='flex w-[50vw] md:w-full items-center justify-center'>
-          <form ref={form} className='flex gap-5 flex-col w-[60%] md:w-[80%]' onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="Name" className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:border-blue-500" required />
-            <input type="email" name="user_email" placeholder="Email" className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:border-blue-500" required />
-            <textarea name="message" placeholder="Message" className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-800 rounded-lg focus:outline-none focus:border-blue-500" required />
-            <button type="submit" className="w-full p-2 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-700 hover:bg-gray-200 hover:dark:bg-gray-900 dark:text-gray-200 rounded-lg focus:outline-none focus:border-blue-500">Submit</button>
+        <div className="flex w-[50vw] md:w-full items-center justify-center">
+          <form
+            ref={form}
+            className="flex gap-5 flex-col w-[60%] md:w-[80%]"
+            onSubmit={sendEmail}
+          >
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:border-blue-500"
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:border-blue-500"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="w-full p-3 border-2 border-gray-300 dark:border-gray-700 dark:text-white dark:bg-gray-800 rounded-lg focus:outline-none focus:border-blue-500"
+              required
+            />
+            <button
+              type="submit"
+              className="w-full p-2 border-2 border-gray-300 dark:border-gray-700 dark:bg-gray-700 hover:bg-gray-200 hover:dark:bg-gray-900 dark:text-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
+            >
+              Submit
+            </button>
+
+            {/* Show success or error message */}
+            {showSuccess && (
+              <div className="mb-4 text-green-600 font-bold">
+                Message sent successfully!
+              </div>
+            )}
+            {showError && (
+              <div className="mb-4 text-red-600 font-bold">
+                Failed to send message. Please try again.
+              </div>
+            )}
           </form>
         </div>
       </div>
