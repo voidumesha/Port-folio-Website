@@ -23,11 +23,11 @@ function Contact() {
       )
       .then(
         (result) => {
-          alert("Message sent!");
+            setShowSuccess(true);
           form.current.reset();
         },
         (error) => {
-          alert("Failed to send, try again.");
+            setShowError(true);
         }
       );
   };
