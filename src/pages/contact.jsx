@@ -137,6 +137,9 @@ function Contact() {
                 <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Ai tools creating
                 </span>
+                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                  POS System building
+                </span>
               </div>
               Connect with me via social media or email.
             </p>
