@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState  } from "react";
 import {
   FaEnvelope,
   FaGithub,
@@ -10,6 +10,8 @@ import emailjs from "emailjs-com";
 
 function Contact() {
   const form = useRef();
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,11 +25,13 @@ function Contact() {
       )
       .then(
         (result) => {
-            setShowSuccess(true);
+          setShowSuccess(true);
+          setShowError(false);
           form.current.reset();
         },
         (error) => {
-            setShowError(true);
+          setShowError(true);
+          setShowSuccess(false);
         }
       );
   };
@@ -40,6 +44,13 @@ function Contact() {
       <h1 className="text-2xl lg:text-3xl text-center font-bold text-gray-500 dark:text-gray-400 mb-8 uppercase tracking-widest ">
         Contact
       </h1>
+      {/* Show success or error message */}
+      {showSuccess && (
+        <div className="mb-4 text-green-600 font-bold">Message sent successfully!</div>
+      )}
+      {showError && (
+        <div className="mb-4 text-red-600 font-bold">Failed to send message. Please try again.</div>
+      )}
 
       <div className=" shadow-md flex flex-row md:flex-col md:gap-8 bg-white dark:bg-gray-900 py-24 md:py-5 w-[70vw] md:w-[90vw] rounded-md">
         <div className="flex flex-col w-[49vw] md:w-full items-center justify-center gap-10">
