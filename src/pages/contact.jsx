@@ -122,7 +122,7 @@ function Contact() {
               Want to hire me ?
             </h2>
             <p className="text-left text-gray-500 dark:text-gray-400">
-              I am available for ,
+              I am available for
               <hr className="my-6 border-t-2 border-blue-400 dark:border-blue-600 w-full" />
               <div className="mb-8 flex flex-col items-start">
                 <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
