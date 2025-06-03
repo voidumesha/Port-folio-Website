@@ -44,6 +44,13 @@ function Header() {
             <div className='fixed w-full top-0 z-20'>
                 <div className='flex w-full flex-row items-center p-6 h-200 justify-between bg-white shadow-sm dark:bg-gray-900 dark:text-[#A5A5A5]'>
                     <div className='flex md:hidden'>
+                        <img
+                            src={require('./logo.png')}
+                            alt="Logo"
+                            width={100}
+                            height={100}
+                            className="mr-4 object-contain"
+                        />
                         <h1 className='text-black dark:text-white mr-16 cursor-pointer' onClick={() => { scrollToElement('about') }}> Umesha Rukshan</h1>
                         <div className='block md:hidden'>
                             <ul className='flex gap-2 md:flex-col cursor-pointer'>
