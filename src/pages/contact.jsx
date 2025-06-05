@@ -191,7 +191,7 @@ function Contact() {
             )}
 
             <img
-              style={{ marginTop: "10px" }}
+              style={{ marginTop: "0px" }}
               src={require("./logo.png")}
               alt="Logo"
               width={400}
