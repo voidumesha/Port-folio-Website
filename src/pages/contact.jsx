@@ -125,19 +125,19 @@ function Contact() {
               I am available for
               <hr className="my-6 border-t-2 border-blue-400 dark:border-blue-600 w-full" />
               <div className="mb-8 flex flex-col items-start">
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="dark:text-gray-400 text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Mobile App development
                 </span>
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="dark:text-gray-400 text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Embedded system development
                 </span>
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="dark:text-gray-400 text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Website development
                 </span>
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="dark:text-gray-400 text-2xl font-extrabold text-gray-700 dark:text-gray-200 mb-2 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   Ai tools creating
                 </span>
-                <span className="text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
+                <span className="dark:text-gray-400 text-2xl font-extrabold text-gray-700 dark:text-gray-200 text-left border-2 border-blue-400 dark:border-blue-600 rounded-lg px-4 py-2 shadow-sm bg-white dark:bg-gray-800 transition-all duration-200 hover:scale-105">
                   POS System building
                 </span>
               </div>

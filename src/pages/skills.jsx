@@ -65,6 +65,7 @@ function skills() {
 
 
   return (
+    
     <div className="pt-28 flex flex-col justify-center items-center  dark:bg-black" id='skills'>
       <h1 className="text-2xl lg:text-3xl text-center font-bold text-gray-500 dark:text-gray-400 mb-8 uppercase tracking-widest"> Tech Environment </h1>
       <div className="flex flex-wrap gap-5 w-[80vw] md:w-[90%] min-h-[50vh] justify-center">
