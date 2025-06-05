@@ -13,7 +13,7 @@ function Contact() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
     if (showSuccess) {
       const timer = setTimeout(() => setShowSuccess(false), 5000);
       return () => clearTimeout(timer);
@@ -145,7 +145,7 @@ function Contact() {
             </p>
           </div>
         </div>
-        <div className="flex w-[50vw] md:w-full items-center justify-center">
+        <div className="flex w-[50vw] md:w-full mt-10 items-center justify-center">
           <form
             ref={form}
             className="flex gap-5 flex-col w-[60%] md:w-[80%]"
@@ -189,6 +189,15 @@ function Contact() {
                 Failed to send message. Please try again.
               </div>
             )}
+
+            <img
+              style={{ marginTop: "10px" }}
+              src={require("./logo.png")}
+              alt="Logo"
+              width={400}
+              height={400}
+              className="inline object-contain align-middle"
+            />
           </form>
         </div>
       </div>

@@ -80,6 +80,7 @@ function Header() {
                   <FaUserAlt /> About
                 </li>
                 <li
+                
                   onClick={() => {
                     scrollToElement("skills");
                   }}
